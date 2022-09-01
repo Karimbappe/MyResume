@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==== BOX ICONS ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--==== CSS ====-->
+    <link rel="stylesheet" href="/Assets/CSS/myResume.css">
+
+    <title>My Resume</title>
+
+</head>
+<body>
+    <!--==== HEADER ====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Fraboulet</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon' ></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon' ></i>References
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="1-main bd-container">
+        <!-- All elements within this div, are generated in PDF. Available for mobile -->
+        <div class="resume">
+            <div class="resume__left">
+            <!--==== HOME ====-->
+            <section class="home" id="home">
+                <div class="home__container section bd_grid">
+                    <div class="home__data bd-grid">
+                        <img src="Assets/Photo-CV.jpg" alt="" class="home__img">
+
+                        <h1 class="home__title">FRABOULET <b>Karim</b></h1>
+                        <h3 class="home__profession">Web Developer</h3>
+
+                        <!-- Button to download your CV aved in the PDF folder -->
+                        <div>
+                            <a download="" href="Assets/PDF/myResume.pdf" class="home__button-movil">Download</a>
+                        </div>
+                    </div>
+
+                    <div class="home__address bd-grid">
+                        <span class="home__information">
+                            <i class='bx bx-map home__icon'></i> 20 Rue de la Tour, 92240 Malakoff France
+                        </span>
+                        <span class="home__information">
+                            <i class='bx bx-envelope home__icon'></i> Karim.Fraboulet@gmail.com
+                        </span>
+                        <span class="home__information">
+                            <i class='bx bx-phone home__icon'></i> 06.99.69.31.46
+                        </span>
+                    </div>
+                </div>
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                <!-- button to generate and download the pdf. version. Available for desktop -->
+                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+
+            </section>
+
+            <!--==== SOCIAL ====-->
+            <section class="social section">
+                <h2 class="section-title">SOCIAL</h2>
+
+                <div class="social__container bd-grid">
+                    <a href="https://www.linkedin.com/in/karim-fraboulet-58658877/" target="_blank" class="social__link">
+                        <i class='bx bxl-linkedin-square social__icon' ></i> @KarimFraboulet
+                    </a>
+                    <a href="https://github.com/Karimbappe" target="_blank" class="social__link">
+                        <i class='bx bxl-github social__icon' ></i> @Karimbappe
+                    </a>
+                    <a href="https://www.codewars.com/users/Karimbappe" target="_blank" class="social__link">
+                        <i class='bx bxs-joystick-alt social__icon'></i> @Karimmbappe
+                    </a>
+                </div>
+            </section>
+
+            <!--==== PROFILE ====-->
+            <section class="profile section" id="profile">
+                <h2 class="section-title">PROFILE</h2>
+
+                <p class="profile__description">Currently in block realese training at <br> Ada tech School. Junior web developer specializing in front-end development. I am a methodical, client-focused developer, responsible with my work and comfortable with multiple stages of development cycle for a dynamic web projects. <br> Strong background in customer relations and negociations</p>
+            </section>
+
+            <!--==== EDUCATION ====-->
+            <section class="education section" id="education">
+                <h2 class="section-title">EDUCATION</h2>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content list_dot">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">TP - Developer web / web mobile</h3>
+                            <span class="education__studies">Ada Tech School</span>
+                            <span class="education__year">2022 - 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content list_dot">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Front-end developer / Javascrpit</h3>
+                            <span class="education__studies">OpenClassrooms</span>
+                            <span class="education__year">2021 - 2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content list_dot">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Associate Degree in Negociation and client relations</h3>
+                            <span class="education__studies">ETS École Européenne
+                            </span>
+                            <span class="education__year">2015 - 2017</span>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <!--==== SKILLS ====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__content bd-grid">
+                    
+                    <ul class="skills__data">
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> HTML
+                        </li> 
+
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> CSS / SASS
+                        </li> 
+
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> Javascrpit
+                        </li> 
+
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> ...
+                        </li> 
+                    </ul>
+
+                    <ul class="skills__data">
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> ...
+                        </li> 
+
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> ...
+                        </li> 
+
+                        <li class="skills__name">
+                            <span class="skills__circle"></span> ...
+                        </li> 
+
+                    </ul>
+                </div>
+            </section>
+
+            </div>
+
+            <div class="resume__right">
+                
+            <!--==== EXPERIENCE ====-->
+            <h2 class="section-title">Experiences</h2>
+
+            <div class="experience__container bd-grid">
+                <div class="experience__content">
+                    <div class="experience__time">
+                        <span class="experience__rounder"></span>
+                        <span class="experience__line"></span>
+                    </div>
+
+                    <div class="experience__data bd-grid">
+                    <h3 class="experience__title">Retail sales man</h3>
+                    <span class="experience__comapany">From 2020 to 2021 | Sandro</span>
+                    <p class="experience__description">Working for this company tought me how to improve my sales speech and manners to higher customers standards</p>
+                    </div>
+                </div>
+
+                <div class="experience__content">
+                    <div class="experience__time">
+                        <span class="experience__rounder"></span>
+                        <span class="experience__line"></span>
+                    </div>
+
+                    <div class="experience__data bd-grid">
+                    <h3 class="experience__title">Retail sales man</h3>
+                    <span class="experience__comapany">From 2017 to 2018 | Paris Saint-Germain</span>
+                    <p class="experience__description">This experience tought me to adapt myself to a big variaty of customers from around the world is mostly thanks to this experince that i am almost fluent in English</p>
+                    </div>
+                </div>
+
+                <div class="experience__content">
+                    <div class="experience__time">
+                        <span class="experience__rounder"></span>
+                    </div>
+
+                    <div class="experience__data bd-grid">
+                    <h3 class="experience__title">Beauty conselor | Retail sales man</h3>
+                    <span class="experience__comapany">From 2016 to 2017 | Lancôme | L'Oréal Luxe France</span>
+                    <p class="experience__description">Working for Lancôme tought me how to work with products i dont know about also how to work hard to be as profitable to the company as poeple with more adequate profil and experience in cosmetic</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--==== CERTIFICATE ====-->
+            <section class="certificate section" id="certificates">
+                <h2 class="section-title">Personal projects</h2>
+
+                <div class="section__container bd-grid">
+                    <div class="certificate__content">
+                        <h3 class="certificate__title">In production...</h3>
+                        <p class="certificate__description">This resume</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==== REFERENCES ====-->
+            <section class="references section" id="references">
+                <h2 class="section-title">References</h2>
+
+                <div class="references__container bd-grid">
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Maybe you aswell</span>
+                        <h3 class="reference__title">Mr. John Doe</h3>
+                        <ul class="references__contact">
+                            <li>Phone: 999-888-777</li>
+                            <li>E-mail: Boss@email.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Maybe you aswell</span>
+                        <h3 class="reference__title">Mr. John Doe</h3>
+                        <ul class="references__contact">
+                            <li>Phone: 999-888-777</li>
+                            <li>E-mail: Boss@email.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==== LANGUAGE ====-->
+            <section class="languages section">
+                <h2 class="section-title">Languages</h2>
+
+                <div class="languages__container">
+                    <ul class="languages__content bd-grid">
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> French
+                        </li>
+
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> English
+                        </li>
+
+                        <li class="languages__name">
+                            <span class="languages__circle"></span> Arabic
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!--==== INTEREST ====-->
+            <section class="interets secion">
+                <h2 class="section-title">Interests</h2>
+
+                <div class="interests__container bd-grid">
+                    <div class="interests__content">
+                        <i class='bx bx-headphone interests__icon' ></i>
+                        <span class="interests__name">Music</span>
+                    </div>
+
+                    <div class="interests__content">
+                        <i class='bx bx-movie-play interests__icon' ></i>
+                        <span class="interests__name">Cinema</span>
+                    </div>
+
+                    <div class="interests__content">
+                        <i class='bx bx-game interests__icon' ></i>
+                        <span class="interests__name">Gaming</span>
+                    </div>
+
+                    <div class="interests__content">
+                        <i class='bx bx-football interests__icon'></i>
+                        <span class="interests__name">Football</span>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <!--==== SCROLL TOP ====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--==== PDF ====-->
+    <script src=""></script>
+
+    <!--==== JAVASCRIPT ====-->
+    <script src="/Assets/JS/myResume.js"></script>
+</body>
+</html>
