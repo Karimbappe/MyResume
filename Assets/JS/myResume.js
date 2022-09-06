@@ -92,6 +92,26 @@ function scaleCv(){
     document.body.classList.add('scale-cv');
 }
 
+/*====== SLIDER PERSONAL PROJECTS ======*/
+
+let img__slider = document.querySelector('img__slider');
+let step = 0;
+let img__nbr = img__slider.length;
+let previous = document.querySelector('.previous');
+let next = document.querySelector('.next');
+
+function takeActiveImgOff(){
+    for(let i = 0; i < img__nbr; i++ ){
+        img__slider[i].classList.remove('active');
+    }
+}
+
+next.addEventListener('click', function(){
+    step++;
+    takeActiveImgOff();
+    img__slider[step].classList.add('active');
+});
+
 /*====== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ======*/
 
 function removeScale(){

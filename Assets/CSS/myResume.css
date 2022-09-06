@@ -493,10 +493,31 @@ img{
     margin-right: .75rem;
 }
 
-/*====== CERTIFICATES ======*/
+/*====== CERTIFICATES / PERSONAL PROJECTS ======*/
 .certificate__title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
+}
+
+.slider img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.next, .previous{
+    color: var(--text-color);
+    font-size: 3rem;
+    position: absolute;
+    top: 115%;
+}
+
+.next{
+    right: 50px;
+}
+
+.previous{
+    left: 372px;
 }
 
 
