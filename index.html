@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!--==== CSS ====-->
-    <link rel="stylesheet" href="/MyResume/Assets/CSS/myResume.css">
+    <link rel="stylesheet" href="Assets/CSS/myResume.css">
 
     <title>My Resume</title>
 
@@ -131,7 +131,7 @@
             <section class="profile section" id="profile">
                 <h2 class="section-title">PROFILE</h2>
 
-                <p class="profile__description">Currently in block realese training at <br> Ada tech School. Junior web developer specializing in front-end development. I am a methodical, client-focused developer, responsible with my work and comfortable with multiple stages of development cycle for a dynamic web projects. <br> Strong background in customer relations and negociations</p>
+                <p class="profile__description">Currently in block release training at <br> Ada tech School. Junior web developer specializing in front-end development. I am a methodical, client-focused developer, responsible with my work and I am comfortable with multiple stages of the development cycle to create dynamic web projects. <br> Strong background in customer relations and negociations</p>
             </section>
 
             <!--==== EDUCATION ====-->
@@ -207,21 +207,6 @@
                             <span class="skills__circle"></span> ...
                         </li> 
                     </ul>
-
-                    <ul class="skills__data">
-                        <li class="skills__name">
-                            <span class="skills__circle"></span> ...
-                        </li> 
-
-                        <li class="skills__name">
-                            <span class="skills__circle"></span> ...
-                        </li> 
-
-                        <li class="skills__name">
-                            <span class="skills__circle"></span> ...
-                        </li> 
-
-                    </ul>
                 </div>
             </section>
 
@@ -240,9 +225,9 @@
                     </div>
 
                     <div class="experience__data bd-grid">
-                    <h3 class="experience__title">Retail sales man</h3>
+                    <h3 class="experience__title">Retail sales advisor</h3>
                     <span class="experience__comapany">From 2020 to 2021 | Sandro</span>
-                    <p class="experience__description">Working for this company tought me how to improve my sales speech and manners to higher customers standards</p>
+                    <p class="experience__description">Working for Sandro taught me to improve my sales speech and manners to higher customers standards</p>
                     </div>
                 </div>
 
@@ -253,9 +238,9 @@
                     </div>
 
                     <div class="experience__data bd-grid">
-                    <h3 class="experience__title">Retail sales man</h3>
+                    <h3 class="experience__title">Retail sales advisor</h3>
                     <span class="experience__comapany">From 2017 to 2018 | Paris Saint-Germain</span>
-                    <p class="experience__description">This experience tought me to adapt myself to a big variaty of customers from around the world is mostly thanks to this experince that i am almost fluent in English</p>
+                    <p class="experience__description">This experience helped me adapt to a variety of customers from around the world, many of which spoke no French and I was required to hone my English. It is mostly thanks to this position that I am now bilingual.</p>
                     </div>
                 </div>
 
@@ -265,9 +250,9 @@
                     </div>
 
                     <div class="experience__data bd-grid">
-                    <h3 class="experience__title">Beauty conselor | Retail sales man</h3>
+                    <h3 class="experience__title">Beauty conselor | Retail sales advisor</h3>
                     <span class="experience__comapany">From 2016 to 2017 | Lancôme | L'Oréal Luxe France</span>
-                    <p class="experience__description">Working for Lancôme tought me how to work with products i dont know about also how to work hard to be as profitable to the company as poeple with more adequate profil and experience in cosmetic</p>
+                    <p class="experience__description">Working for Lancôme tought me how to work with products I dont know about also how to work hard to be as profitable to the company as people with more adequate profiles and experience in cosmetics.</p>
                     </div>
                 </div>
             </div>
@@ -275,25 +260,50 @@
             <!--==== PERSONAL PROJECT ====-->
             <section class="certificate section" id="certificates">
                 <h2 class="section-title">Personal projects</h2>
-
-                <div class="slider">
-                    <img src="Assets/img/ezgiffood.gif" alt="image1" class="img__slider">
-                    <img src="Assets/img/ezgifpico8.gif" alt="image2">
-                    <img src="Assets/img/ezgifreservia.gif" alt="image3">
-                    <div class="next">
-                        <i class='bx bx-chevron-right'></i>
+                <div class="slider-container">
+                    <div class="menu">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                        <label for="slide-dot-3"></label>
                     </div>
-                    <div class="previous">
-                        <i class='bx bx-chevron-left'></i>
-                    </div>
+                    
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="Assets/img/ezgiffood.gif">
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="Assets/img/ezgifpico8.gif">
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="Assets/img/ezgifreservia.gif">
                 </div>
-
-                <!-- <div class="section__container bd-grid">
-                    <div class="certificate__content">
-                        <h3 class="certificate__title">In production...</h3>
-                        <p class="certificate__description">This resume</p>
+                <div class="references__container bd-grid">
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Project 1</span>
+                        <h3 class="reference__title">OH MY FOOD</h3>
+                        <ul class="references__contact">
+                            <li>OpenClassrooms</li>
+                            <li>HTML/CSS</li>
+                        </ul>
                     </div>
-                </div> -->
+
+                    <div class="references__content bd-grid">
+                        <span class="references__subtitle">Project 2</span>
+                        <h3 class="reference__title">Pico 8</h3>
+                        <ul class="references__contact">
+                            <li>Ada tech School</li>
+                            <li>LUA</li>
+                        </ul>
+                    </div>
+                <div class="references__content bd-grid">
+                    <span class="references__subtitle">Project 3</span>
+                    <h3 class="reference__title">Reservia</h3>
+                    <ul class="references__contact">
+                        <li>OpenClassrooms</li>
+                        <li>HTML/SASS</li>
+                    </ul>
+                </div>
+            </div>
+
+            </section>
+
             </section>
             
             <!--==== REFERENCES ====-->
@@ -302,7 +312,7 @@
 
                 <div class="references__container bd-grid">
                     <div class="references__content bd-grid">
-                        <span class="references__subtitle">Maybe you aswell</span>
+                        <span class="references__subtitle">...</span>
                         <h3 class="reference__title">Mr. John Doe</h3>
                         <ul class="references__contact">
                             <li>Phone: 999-888-777</li>
@@ -311,7 +321,7 @@
                     </div>
 
                     <div class="references__content bd-grid">
-                        <span class="references__subtitle">Maybe you aswell</span>
+                        <span class="references__subtitle">...</span>
                         <h3 class="reference__title">Mr. John Doe</h3>
                         <ul class="references__contact">
                             <li>Phone: 999-888-777</li>
@@ -382,6 +392,6 @@
     <script src=""></script>
 
     <!--==== JAVASCRIPT ====-->
-    <script src="/MyResume/Assets/JS/myResume.js"></script>
+    <script src="Assets/JS/myResume.js"></script>
 </body>
 </html>
