@@ -75,7 +75,9 @@ body.scale-cv{
     --normal-font-size: .813rem;
     --small-font-size: .75rem;
     --smaller-font-size: .688rem;
+    margin: 0rem;
 }
+
 
 
 /*====== Generate PDF button  ======*/
@@ -117,8 +119,8 @@ body.scale-cv{
 }
 
 .scale-cv .home__img{
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
 }
 
 .scale-cv .home__container{
@@ -141,7 +143,7 @@ body.scale-cv{
 }
 
 .scale-cv .education__container,
-.scale-sc .experience__container,
+.scale-cv .experience__container,
 .scale-cv .certificate__container{
     gap: 1rem;
 }
@@ -162,8 +164,7 @@ body.scale-cv{
 .scale-cv .experience__line{
     width: 1px;
     height: 110%;
-    transform: translate(5px 0);
-    margin: -2px;
+    transform: translate(5px, 0);
 }
 
 .scale-cv .education__data,
@@ -178,6 +179,29 @@ body.scale-cv{
 .scale-cv .interests__container{
     column-gap: 2.5rem;
 }
+
+.scale-cv .slider-container,
+.scale-cv .menu label,
+.scale-cv .sec,
+.scale-cv .slide-input,
+.scale-cv .slide-img{
+    display: none;
+}
+
+.scale-cv .bd-grid{
+    margin-top: 0px;
+}
+
+.scale-cv .special-line{
+    width: 1px;
+    height: 100%;
+    transform: translate(5px, 0);
+}
+
+.scale-cv .languages__content{
+    gap: 2rem;
+}
+
 
 body {
     margin: 0 0 var(--header-height) 0;
@@ -333,13 +357,13 @@ img{
 .home__data{
     gap: .5rem;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 8px;
 }
 
 .home__img{
     object-fit: cover;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     justify-self: center;
     margin-bottom: var(--mb-1);
@@ -409,7 +433,7 @@ img{
 
 /*====== PROFILE ======*/
 .profile__description{
-    text-align: center;
+    text-align: left;
 }
 
 /*====== EDUCATION AND EXPERIENCE ======*/
@@ -465,11 +489,8 @@ img{
 }
 
 
-/*====== SKILSS AND LANGUAGES ======*/
-.skills__content,
-.languages__content{
-    grid-template-columns: repeat(2, 1fr);
-}
+/*====== SKILLSS AND LANGUAGES ======*/
+
 
 .skills__content,
 .languages__content{
@@ -631,6 +652,11 @@ img {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem .5rem;
     }
+
+    .references__container{
+        grid-template-columns: 6fr 6fr;
+        text-align: center;;
+    }
 }
 
 /* Classes modified for large screens size */
@@ -690,12 +716,16 @@ img {
     }
 
     .references__container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .languages__content{
         grid-template-columns: repeat(3, max-content);
         column-gap: 3.5rem;
+    }
+
+    .references__container{
+        text-align: center;
     }
 
     .interests__container{

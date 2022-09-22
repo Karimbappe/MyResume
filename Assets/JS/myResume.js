@@ -92,6 +92,35 @@ function scaleCv(){
     document.body.classList.add('scale-cv');
 }
 
+/*====== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ======*/
+
+function removeScale(){
+    document.body.classList.remove('scale-cv');
+}
+
+/*====== GENERATE PDF ======*/
+// PDF generated area
+let areaCv = document.getElementById('area-cv');
+
+let resumeButton = document.getElementById('resume-button');
+
+// Html2pdf options
+
+
+// Function to all areaCv and Html2pdf options
+function generateResume(){
+    html2pdf(areaCv);
+}
+
+// When the button is clicked it executes the three functions, 
+resumeButton.addEventListener('click', () =>{
+    // 1. The class .scale-cv s added to the body, and reduce the size of the resume
+    scaleCv();
+    // 2. The PDF is generated 
+    generateResume();
+    // 3. The scale-cv class is removed from the body after 5sec and return to normal
+});
+
 /*====== SLIDER PERSONAL PROJECTS ======*/
 
 let img__slider = document.querySelector('img__slider');
@@ -111,33 +140,3 @@ next.addEventListener('click', function(){
     takeActiveImgOff();
     img__slider[step].classList.add('active');
 });
-
-/*====== REMOVE THE SIZE WHEN THE CV IS DOWNLOADED ======*/
-
-function removeScale(){
-    document.body.classList.remove('scale-cv');
-}
-
-/*====== GENERATE PDF ======*/
-// PDF generated area
-
-const resumeButton = document.getElementById('resume-button');
-
-
-// Html2pdf options
-
-
-// Function to all areaCv and Html2pdf options
-
-
-// When the button is clicked it executes the three functions, 
-resumeButton.addEventListener('onclick', function(){
-    // 1. The class .scale-cv s added to the body, and reduce the size of the resume
-    console.log('wtf...');
-    scaleCv();
-
-    // 2. The PDF is generated 
-
-
-    // 3. The scale-cv class is removed from the body after 5sec and return to normal
-})

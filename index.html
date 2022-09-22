@@ -73,7 +73,7 @@
     </header>
     <main class="1-main bd-container">
         <!-- All elements within this div, are generated in PDF. Available for mobile -->
-        <div class="resume">
+        <div class="resume" id="area-cv">
             <div class="resume__left">
             <!--==== HOME ====-->
             <section class="home" id="home">
@@ -106,7 +106,7 @@
                 <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
 
                 <!-- button to generate and download the pdf. version. Available for desktop -->
-                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                <i class='bx bx-download generate-pdf' title="Generate" id="resume-button"></i>
 
             </section>
 
@@ -131,7 +131,7 @@
             <section class="profile section" id="profile">
                 <h2 class="section-title">PROFILE</h2>
 
-                <p class="profile__description">Currently in block release training at <br> Ada tech School. Junior web developer specializing in front-end development. I am a methodical, client-focused developer, responsible with my work and I am comfortable with multiple stages of the development cycle to create dynamic web projects. <br> Strong background in customer relations and negociations</p>
+                <p class="profile__description">Currently in block release training at Ada tech School.<br> Junior web developer specializing in front-end development. I am a methodical, client-focused developer, responsible with my work and I am comfortable with multiple stages of the development cycle to create dynamic web projects. I have a big team spirit and i enjoy pair programming. <br> 
             </section>
 
             <!--==== EDUCATION ====-->
@@ -146,7 +146,7 @@
                         </div>
 
                         <div class="education__data bd-grid">
-                            <h3 class="education__title">TP - Developer web / web mobile</h3>
+                            <h3 class="education__title">Developer web / web mobile</h3>
                             <span class="education__studies">Ada Tech School</span>
                             <span class="education__year">2022 - 2023</span>
                         </div>
@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="education__data bd-grid">
-                            <h3 class="education__title">Front-end developer / Javascrpit</h3>
+                            <h3 class="education__title">Front-end / Javascrpit</h3>
                             <span class="education__studies">OpenClassrooms</span>
                             <span class="education__year">2021 - 2022</span>
                         </div>
@@ -172,12 +172,28 @@
                     <div class="education__content list_dot">
                         <div class="education__time">
                             <span class="education__rounder"></span>
+                            <span class="education__line special-line"></span>
                         </div>
 
                         <div class="education__data bd-grid">
-                            <h3 class="education__title">Associate Degree in Negociation and client relations</h3>
-                            <span class="education__studies">ETS École Européenne
+                            <h3 class="education__title">Piscine / C</h3>
+                            <span class="education__studies">Ecole 42
                             </span>
+                            <span class="education__year">Juin 2019</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="education__container bd-grid">
+                    <div class="education__content list_dot">
+                        <div class="education__time">
+                            <span class="education__rounder"></span>
+                        </div>
+
+                        <div class="education__data bd-grid">
+                            <h3 class="education__title">Negociation and client relations</h3>
+                            <span class="education__studies">ETS École Européenne</span>
                             <span class="education__year">2015 - 2017</span>
                         </div>
                     </div>
@@ -186,7 +202,7 @@
 
             <!--==== SKILLS ====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <!--<h2 class="section-title">Skills</h2>
 
                 <div class="skills__content bd-grid">
                     
@@ -204,10 +220,10 @@
                         </li> 
 
                         <li class="skills__name">
-                            <span class="skills__circle"></span> ...
+                            <span class="skills__circle"></span> Python
                         </li> 
                     </ul>
-                </div>
+                </div>-->
             </section>
 
             </div>
@@ -268,37 +284,63 @@
                     </div>
                     
                     <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-                    <img class="slide-img" src="Assets/img/ezgiffood.gif">
-                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-                    <img class="slide-img" src="Assets/img/ezgifpico8.gif">
-                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
                     <img class="slide-img" src="Assets/img/ezgifreservia.gif">
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="Assets/img/ezgiffood.gif ">
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="Assets/img/ezgifpico8.gif">
                 </div>
-                <div class="references__container bd-grid">
-                    <div class="references__content bd-grid">
-                        <span class="references__subtitle">Project 1</span>
-                        <h3 class="reference__title">OH MY FOOD</h3>
-                        <ul class="references__contact">
-                            <li>OpenClassrooms</li>
-                            <li>HTML/CSS</li>
-                        </ul>
-                    </div>
 
-                    <div class="references__content bd-grid">
-                        <span class="references__subtitle">Project 2</span>
-                        <h3 class="reference__title">Pico 8</h3>
-                        <ul class="references__contact">
-                            <li>Ada tech School</li>
-                            <li>LUA</li>
-                        </ul>
-                    </div>
+            <div class="references__container bd-grid">
+
+                <div class="references__content bd-grid">
+                    <span class="references__subtitle">Project 1</span>
+                        <h3 class="reference__title">Reservia</h3>
+                            <ul class="references__contact">
+                                <li>OpenClassrooms</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                </div>
+
+                <div class="references__content bd-grid">
+                    <span class="references__subtitle">Project 2</span>
+                        <h3 class="reference__title">OH MY FOOD</h3>
+                            <ul class="references__contact">
+                                <li>OpenClassrooms</li>
+                                <li>HTML/CSS/SASS</li>
+                            </ul>
+                </div>
                 <div class="references__content bd-grid">
                     <span class="references__subtitle">Project 3</span>
-                    <h3 class="reference__title">Reservia</h3>
-                    <ul class="references__contact">
-                        <li>OpenClassrooms</li>
-                        <li>HTML/SASS</li>
-                    </ul>
+                        <h3 class="reference__title">GameOn</h3>
+                            <ul class="references__contact">
+                                <li>OpenClassrooms</li>
+                                <li>HTML/CSS/JS</li>
+                            </ul>
+                </div>
+                <div class="references__content bd-grid">
+                    <span class="references__subtitle">Project 4</span>
+                        <h3 class="reference__title">PICO 8</h3>
+                        <ul class="references__contact">
+                            <li>ADA Tech School</li>
+                            <li>LUA</li>
+                        </ul>
+                </div>
+                <div class="references__content bd-grid">
+                    <span class="references__subtitle">Project 5</span>
+                        <h3 class="reference__title">DataVis</h3>
+                        <ul class="references__contact">
+                            <li>ADA Tech School</li>
+                            <li>HTML/CSS/JS</li>
+                        </ul>
+                </div>
+                <div class="references__content bd-grid">
+                    <span class="references__subtitle">Project 6</span>
+                        <h3 class="reference__title">Extension</h3>
+                        <ul class="references__contact">
+                            <li>ADA Tech School</li>
+                            <li>HTML/CSS/JS</li>
+                        </ul>
                 </div>
             </div>
 
@@ -308,11 +350,31 @@
             
             <!--==== REFERENCES ====-->
             <section class="references section" id="references">
-                <h2 class="section-title">References</h2>
+                <h2 class="section-title">Soft Skills</h2>
 
                 <div class="references__container bd-grid">
-                    <div class="references__content bd-grid">
-                        <span class="references__subtitle">...</span>
+                    
+                        <div class="skills__content bd-grid">
+                    
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Team Work
+                                </li> 
+        
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Conscientiousness
+                                </li> 
+        
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Curiosity
+                                </li> 
+        
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Determination
+                                </li> 
+                            </ul>
+                        </div>
+                    <!--<span class="references__subtitle">...</span>
                         <h3 class="reference__title">Mr. John Doe</h3>
                         <ul class="references__contact">
                             <li>Phone: 999-888-777</li>
@@ -328,7 +390,7 @@
                             <li>E-mail: Boss@email.com</li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
 
             </section>
 
@@ -339,11 +401,11 @@
                 <div class="languages__container">
                     <ul class="languages__content bd-grid">
                         <li class="languages__name">
-                            <span class="languages__circle"></span> French
+                            <span class="languages__circle"></span> French (Native)
                         </li>
 
                         <li class="languages__name">
-                            <span class="languages__circle"></span> English
+                            <span class="languages__circle"></span> English (C2)
                         </li>
 
                         <li class="languages__name">
@@ -354,7 +416,7 @@
             </section>
             
             <!--==== INTEREST ====-->
-            <section class="interets secion">
+            <section class="interets section">
                 <h2 class="section-title">Interests</h2>
 
                 <div class="interests__container bd-grid">
@@ -389,7 +451,7 @@
     </a>
 
     <!--==== PDF ====-->
-    <script src=""></script>
+    <script src="Assets/JS/html2pdf.bundle.min.js"></script>
 
     <!--==== JAVASCRIPT ====-->
     <script src="Assets/JS/myResume.js"></script>
