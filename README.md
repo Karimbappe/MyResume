@@ -3,6 +3,8 @@ My Resume
 
 My resume est une page web qui présente mon curriculum vitae. Il est développé en utilisant HTML, CSS et JavaScript. Il vous permet de découvrir mes compétences, mes expériences professionnelles et certains de mes projets réalisés.
 
+stack : HTMl, CSS, JavaScript
+
 Fonctionnalités
 
 - Présentation de mes informations personnelles et de mon parcours professionnel
